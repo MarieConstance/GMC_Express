@@ -8,14 +8,16 @@
 }
 body{
     font-family: 'Montserrat Alternates', sans-serif;
+   
 }
 header{
-   height: 10vh;
+   height: 8vh;
    width: 100vw;
-   background-color:#075367 ;
+   background-color:#303F49 ;
    background-size: cover;
    position: fixed;
    z-index:1;
+   margin-top: 3rem;
 }
 .navbar{
     position: absolute;
@@ -23,9 +25,7 @@ header{
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-    z-index: 1;
-
-    
+    z-index: 1;  
 
 }
 .navbar a{
@@ -33,25 +33,53 @@ header{
     font-size: 1.2rem;
 }
 .navbar a:hover{
-    border-bottom: 5px solid #B87410;
+    color: #FF6E40;
+   
 }
 .navbar .logo{
-    width: 7rem;
-    height: 5.5rem;
+    width: 6rem;
+    height: 4.5rem;
     margin-left: 5rem; 
-    
+    border-radius: 50%;
+    margin-top: .3rem;
 }
+.navbar .navlinks{
+    display: flex;
+}
+
 .navbar .navlinks ul {
     display: flex;
     margin-top: 30px;
+    margin-right: 18Rem;
 
 }
 .navbar .navlinks ul li{
-    margin: 0 60px;
+    margin: 0 50px;
     
 }
+
+.navlinks .login{
+    margin-right: 10rem;
+    border: 1px solid #FF6E40 ;
+    height: 3rem;
+    width: 11rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1rem;
+}
+
+.navlinks .login:hover{
+    
+    background-color:#FF6E40 ;
+    color: white;
+}
+.navlinks .login a:hover{
+    
+    color: white;
+}
+
 .navbar .navlinks ul li.active a{
-    color: #B87410;
+    color: #FF6E40;
     
 }
 

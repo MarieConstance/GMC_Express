@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <%- include('navbar/navbar') %>
+   
+    <header>
+        <nav class="navbar">
+            <a href="#"class="lien"><img src="../public/images/GMC EXPRESS.png" alt="" class="logo"></a>
+            <div class="navlinks">
+                <ul>
+                    <li class="active"><a href="/views/navbar/index">ACCEUIL</a></li>
+                    <li><a href="espaceClient">ESPACE CLIENT</a></li>
+                    <li><a href="#a_propos">À PROPOS</a></li>
+                    
+                </ul>
+                <li><button class="login"><a href="connexion">CONNEXION </a></button></li>
+
+            </div>
+
+            <img src="/images/burger-menu-svgrepo-com.png" alt="" class="menuburger">
+
+        </nav>
+    </header>
+    
+
+    <script>
+
+        const menuHamburger = document.querySelector(".menuburger")
+        const navLinks = document.querySelector(".navlinks")
+
+        menuHamburger.addEventListener('click', ()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
