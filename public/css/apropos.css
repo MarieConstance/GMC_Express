@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+*{
+    font-family: 'Lobster Two', cursive;
+}
+
+body{ 
+    background-image: url("../images/pexels-tiger-lily-4481534.jpg");
+    background-size: cover;
+}
+
+.titreapropos{
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.titreapropos h4{
+    color: white;
+}
+
+.underline{
+    border-bottom: 2px solid #FF6E40;
+    width: 15rem;
+    margin-left: 57rem;
+}
+
+.titreapropos h3{
+    margin-top: 2rem;
+    color: white;
+}
+
+.titreapropos span{
+    color: #FF6E40;
+}
+.listcard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card1{
+    width: 30rem;
+    height: 17rem;
+    background-color: #0b22399c;
+    margin-top: 15rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+}
+.card2{
+    width: 30rem;
+    height: 17rem;
+    background-color: #0b22399c;
+    margin-right: 2rem;
+    margin-top: 15rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+}
+.card3{
+    width: 30rem;
+    height: 17rem;
+    background-color: #0b22399c;
+    margin-top: 15rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.card1:hover,.card2:hover,.card3:hover{
+    background-color: #FF6E40;
+    border: 1px solid #FF6E40;
+    scale: 1 1.5;
+}
+
+

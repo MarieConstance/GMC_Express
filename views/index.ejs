@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
     <title>Document</title>
 </head>
 <body>
 
     <%- include('navbar/navbar') %>
-   
-    <header>
-        <nav class="navbar">
-            <a href="#"class="lien"><img src="../public/images/GMC EXPRESS.png" alt="" class="logo"></a>
-            <div class="navlinks">
-                <ul>
-                    <li class="active"><a href="/views/navbar/index">ACCEUIL</a></li>
-                    <li><a href="espaceClient">ESPACE CLIENT</a></li>
-                    <li><a href="#a_propos">À PROPOS</a></li>
-                    
-                </ul>
-                <li><button class="login"><a href="connexion">CONNEXION </a></button></li>
 
-            </div>
+    <div class=" ecriture">
+        <div>
+            <h2>BIENVENU CHEZ <br> <span>GMC-EXPRESS</span></h2>
+            <h4>Votre application de suivie des expéditions</h4>
+        </div>
 
-            <img src="/images/burger-menu-svgrepo-com.png" alt="" class="menuburger">
+       <div>
+            <a href=""><button class="btn"> VOIR PLUS</button></a>
+        </div> 
+    </div>
 
-        </nav>
-    </header>
-    
+    <%- include('footer/footer') %>
 
     <script>
 
@@ -40,5 +43,9 @@
             navLinks.classList.toggle('mobile-menu')
         })
     </script>
+
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

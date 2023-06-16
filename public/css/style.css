@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+}
+
+
+body{ 
+    background-image: url("../images/pexels-maximilian-ruther-11589778.jpg");
+    background-size: cover;
+}
+
+.ecriture{
+    margin-top: 25rem;
+    width: 35rem;
+    height: 15rem;
+    margin-left: 5rem;
+    text-align: center;
+}
+.ecriture h2{
+    color: white;
+    font-size: 3rem;
+}
+.ecriture h4{
+    color: white;
+    font-size: 1.7rem;
+}
+.ecriture span{
+    color: #FF6E40;
+}
+
+
+
+/* .ecriture button:hover{
+    border: 1px solid #FF6E40;
+    color: white;
+    background-color: #FF6E40;
+}
+.ecriture button a{
+    color: white;
+    text-decoration: none;
+} */
+
+.btn {
+ width: 12rem;
+ height: 4rem;
+ border: 1px solid #FF6E40;
+ color: white;
+ border-radius: 2rem;
+ background-color: #303f49b2;
+ margin-top: 2rem;
+ padding: 1.1em 2em;
+ 
+ font-size: 15px;
+ color: #131313;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ -webkit-transition: all 0.3s;
+ transition: all 0.3s;
+ font-weight: bolder;
+ -webkit-box-shadow: 0 2px 0 2px #000;
+         box-shadow: 0 2px 0 2px #000;
+}
+
+.btn:before {
+ content: "";
+ position: absolute;
+ width: 100px;
+ height: 120%;
+ background-color: #ff6700;
+ top: 50%;
+ -webkit-transform: skewX(30deg) translate(-150%, -50%);
+     -ms-transform: skewX(30deg) translate(-150%, -50%);
+         transform: skewX(30deg) translate(-150%, -50%);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+
+.btn:hover {
+ background-color: #4cc9f0;
+ color: #fff;
+ -webkit-box-shadow: 0 2px 0 2px #0d3b66;
+         box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+ -webkit-transform: skewX(30deg) translate(150%, -50%);
+     -ms-transform: skewX(30deg) translate(150%, -50%);
+         transform: skewX(30deg) translate(150%, -50%);
+ -webkit-transition-delay: 0.1s;
+         transition-delay: 0.1s;
+}
+
+.btn:active {
+ -webkit-transform: scale(0.9);
+     -ms-transform: scale(0.9);
+         transform: scale(0.9);
+}
+
+/* footer */
+
+
+

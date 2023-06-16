@@ -12,3 +12,14 @@ const user = new User(req.body)
         return res.status(400).json((error))
     })
 }
+
+
+exports.inscription = async (req, res)=> {
+
+    try {
+        const login = await User.findEmail
+        
+    } catch (error) {
+        
+    }
+}
