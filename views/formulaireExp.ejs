@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+        
+        <%- include('navbar/navbaraccueil') %>
+        <h2 class="title"> .Formulaire d'expédition</h2>
+
+        <form class="form">
+    
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Numéro de Suivi</span>
+                </label>
+        
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Nom de l'expéditeur</span>
+                </label>
+            </div>  
+                    
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Adresse de Livraison</span>
+            </label> 
+                
+            <label>
+                <input required="" type="tel" placeholder="" class="input">
+                <span>Adresse de l'expéditeur</span>
+            </label>
+
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="date" class="input" id="date">
+                    <span>Date d'expedition</span>
+                </label>
+
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Poids du colis (kg)</span>
+                </label>
+        
+            </div> 
+            
+            <label>
+                <input required="" type="tel" placeholder="" class="input">
+                <span>Type d'expédition</span>
+            </label>
+            
+            <label>
+                <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                <span>Instructions supplémentaires</span>
+            </label>
+            
+            <button class="fancy" href="#">
+              <span class="top-key"></span>
+              <span class="text">ENVOYER</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </button>
+        </form>
+
+
+        <%- include('footer/footer') %>
+     
+</body>
+
+</html>

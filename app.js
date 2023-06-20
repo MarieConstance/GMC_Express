@@ -1,8 +1,8 @@
-const express = require ('express')
+/*const express = require ('express')
 const app = express()
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const routeUser = require('./router/route')
+// const routeUser = require('./router/route')
 const route=require('./router/route')
 
 
@@ -18,13 +18,13 @@ mongoose.connect('mongodb+srv://goamarieconstance:Constance23.@marie.5ivejvu.mon
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.json())
-app.use('/api/user', routeUser);
+// app.use('/api/user', routeUser);
 
 app.use("/",route)
 
 
 
 module.exports = app;
-
+*/
 
 // mongodb+srv://goamarieconstance:Constance23.@marie.5ivejvu.mongodb.net/

@@ -18,30 +18,29 @@
 </head>
 
 <body>
-      
+    <form action="http://localhost:3000/login" method="POST">
+
+
     <div class="form">
         <div class="title">RAVIS DE VOUS REVOIR</div>
         <div class="subtitle">Connectez vous !</div>
   
-        <div class="input-container ic1">
-          <input placeholder="" type="text" class="input" id="firstname">
-          <div class="cut"></div>
-          <label class="iLabel" for="firstname">Nom</label>
-        </div>
   
 
         <div class="input-container ic2">
-          <input placeholder="" type="text" class="input" id="email">
+          <input placeholder="" type="email" class="input" id="email" name="email" required>
           <div class="cut cut-short"></div>
           <label class="iLabel" for="email">Adresse Email</label>
         </div>
 
         <div class="input-container ic2">
-            <input placeholder="" type="text" class="input" id="psw">
+            <input placeholder="" type="password" class="input" id="psw" name="password" required>
             <div class="cut cut-short"></div>
             <label class="iLabel" for="password">Mot de passe</label>
           </div>
-        <button class="submit" type="text">submit</button>
+        <button class="submit" type="submit">submit</button>
+
+      </form>  
       </div>
 
 </body>

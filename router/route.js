@@ -1,33 +1,42 @@
 const express = require("express");
-const router = express.Router();
-const userCtrl = require('../controller/Utlisateur')
+const Router = express.Router();
+const userCtrl = require('../controller/Utlisateur');
+const ControllerUser = require("../controller/controllerUser");
 
-router.post('/inde',userCtrl.createUser)
+Router.post("/saveUser", ControllerUser.saveUser)
+Router.post("/login", ControllerUser.login)
 
-router.get("/", (req, res) => {
+Router.post('/inde',userCtrl.createUser)
+
+Router.get("/", (req, res) => {
   res.render("index");
 });
 
-router.get("/apropos", (req, res) => {
+Router.get("/apropos", (req, res) => {
   res.render("apropos");
 });
 
-router.get("/contact", (req, res) => {
+Router.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-router.get("/connexion", (req, res) => {
+Router.get("/connexion", (req, res) => {
   res.render("connexion");
 });
 
-router.get("/inscription", (req, res) => {
+Router.get("/inscription", (req, res) => {
   res.render("inscription");
 });
 
-router.get("/accueil", (req, res) => {
+
+Router.get("/accueil", (req, res) => {
   res.render("accueil");
+});
+
+Router.get("/formulaireexp", (req, res) => {
+  res.render("formulaireExp");
 });
     
 
 
-module.exports = router;
+module.exports = Router;
