@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/listeExpedition.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+        
+        <%- include('navbar/navbaraccueil') %>
+        <h2 class="title"> .La Liste des Expéditions</h2>
+
+        <!-- recherche -->
+
+        <div class="input-wrapper">
+            <button class="icon"> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+              </svg>
+            </button>
+            <input placeholder="search.." class="input" name="text" type="text">
+          </div>
+
+          <!----------------->
+
+        <!-- <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                 
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Consulter
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Alex Ray</p>
+                     
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Consultant</p>
+                 
+                </td>
+                <td>
+                  <span class="badge badge-primary rounded-pill d-inline"
+                        >Onboarding</span
+                    >
+                </td>
+                <td>Junior</td>
+                <td>Junior</td>
+                <td>Junior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          data-mdb-ripple-color="dark"
+                          >
+                          Consulter
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Kate Hunington</p>
+                      
+                    </div>
+                  </div>
+                </td>
+                
+                <td>
+                  <p class="fw-normal mb-1">Designer</p>
+                 
+                </td>
+                <td>
+                  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                </td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          data-mdb-ripple-color="dark"
+                          >
+                          Consulter
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+
+          <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>Numero de suivi</th>
+                <th>Nom de l'expéditeur</th>
+                <th>Adresse de Livraison</th>
+                <th>Adresse de l'expéditeur</th>
+                <th>Date de livraison</th>
+                <th>Statut actuel</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                     
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  
+                </td>
+                
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Consulter
+                  </button>
+                </td>
+                
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Kate Hunington</p>
+                    
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Designer</p>
+                 
+                </td>
+                <td>sd</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>Senior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          data-mdb-ripple-color="dark"
+                          >
+                    Consulter
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+       
+
+        <%- include('footer/footer') %>
+     
+</body>
+
+</html>

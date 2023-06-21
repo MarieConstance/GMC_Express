@@ -3,13 +3,15 @@
     flex-direction: column;
     gap: 10px;
     max-width: 50rem;
-    margin-left: 35rem;
+    margin-left: 38rem;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, #FF6E40 0px 8px 16px -8px;
     margin-top: 3rem;
+    text-align: center;
+   
   }
   
   .message {
@@ -56,6 +58,10 @@
     font-weight: 600;
   }
   
+  .form label .input:valid + span {
+    color: #FF6E40;
+  }
+
   .form label .input:valid + span {
     color: #FF6E40;
   }
@@ -120,7 +126,7 @@
     content: " ";
     width: 1.7rem;
     height: 2px;
-    background: #cacaca;
+    background-color: #FF6E40;
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -175,7 +181,7 @@
   
   .fancy:hover {
     color: white;
-    background: #cacaca;
+    background-color: #FF6E40;
   }
   
   .fancy:hover::before {
@@ -202,6 +208,6 @@
 .title{
     text-align: center;
     color: #FF6E40;
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-size: 2.5rem;
 }

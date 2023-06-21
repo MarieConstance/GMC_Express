@@ -498,7 +498,7 @@ header .header-right .hamburger div {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #0b2239;
     min-width: 250px;
     box-shadow: 0px 5px 8px 0px #FF6E40;
     z-index: 1;
@@ -506,7 +506,7 @@ header .header-right .hamburger div {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;

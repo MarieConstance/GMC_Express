@@ -21,50 +21,41 @@
         <%- include('navbar/navbaraccueil') %>
         <h2 class="title"> .Formulaire d'expédition</h2>
 
-        <form class="form">
+        <form class="form" action="http://localhost:3000/expedition" method="POST">
     
-            <div class="flex">
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Numéro de Suivi</span>
-                </label>
-        
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Nom de l'expéditeur</span>
-                </label>
-            </div>  
+            <label>
+                <input required="" placeholder="" type="text" class="input" name="numero">
+                <span>Numéro du phone de l'expediteur</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="text" class="input" name="destinataire">
+                <span>Nom du destinataire</span>
+            </label> 
                     
             <label>
-                <input required="" placeholder="" type="text" class="input">
+                <input required="" placeholder="" type="text" class="input" name="adressLivraison">
                 <span>Adresse de Livraison</span>
             </label> 
                 
             <label>
-                <input required="" type="tel" placeholder="" class="input">
+                <input required="" type="text" placeholder="" class="input" name="expediteur">
                 <span>Adresse de l'expéditeur</span>
+            </label>
+            <label disabled>
+                <input required="" type="text"  class="input" name="reference">
+                <span>Reference de l'expéditeur</span>
             </label>
 
             <div class="flex">
                 <label>
-                    <input required="" placeholder="" type="date" class="input" id="date">
-                    <span>Date d'expedition</span>
-                </label>
-
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Poids du colis (kg)</span>
+                    <input required="" placeholder="" min="1" type="number" class="input" id="poids" name="poids">
+                    <span>Poids du colis(kg)</span>
                 </label>
         
             </div> 
             
             <label>
-                <input required="" type="tel" placeholder="" class="input">
-                <span>Type d'expédition</span>
-            </label>
-            
-            <label>
-                <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                <textarea required="" rows="3" placeholder="" class="input01" name="description"></textarea>
                 <span>Instructions supplémentaires</span>
             </label>
             
