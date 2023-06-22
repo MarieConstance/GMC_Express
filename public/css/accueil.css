@@ -1,0 +1,16 @@
+.slideshow-container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  
+  .slideshow {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slid {
+    flex: 0 0 100%;
+  }
+  
+  

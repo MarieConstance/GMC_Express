@@ -41,30 +41,28 @@ body{
 }
 
 .card1{
-    width: 30rem;
-    height: 17rem;
+    width: 28rem;
+    height: 18rem;
     background-color: #0b22399c;
-    margin-top: 15rem;
-    margin-right: 5rem;
+    margin-top: 8rem;
     border-radius: 2rem;
     color: white;
     text-align: center;
 }
 .card2{
-    width: 30rem;
-    height: 17rem;
+    width: 28rem;
+    height: 18rem;
     background-color: #0b22399c;
-    margin-right: 2rem;
-    margin-top: 15rem;
+    margin-top: 8rem;
     border-radius: 2rem;
     color: white;
     text-align: center;
 }
 .card3{
-    width: 30rem;
-    height: 17rem;
+    width:28rem;
+    height: 18rem;
     background-color: #0b22399c;
-    margin-top: 15rem;
+    margin-top: 8rem;
     border-radius: 2rem;
     color: white;
     text-align: center;
@@ -73,7 +71,22 @@ body{
 .card1:hover,.card2:hover,.card3:hover{
     background-color: #FF6E40;
     border: 1px solid #FF6E40;
-    scale: 1 1.5;
+    scale: 1.2 1.1;
 }
+.card1 :hover,.card2 :hover,.card3 :hover{
+    color: white;
+   
+}
+.card1 h4 ,.card2 h4 , .card3 h4{
+    color: #FF6E40;
+    text-align: center;
+}
+.apropotext{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+
 
 
