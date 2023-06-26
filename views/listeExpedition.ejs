@@ -144,6 +144,24 @@
                 <th>Statut actuel</th>
                 <th>Actions</th>
               </tr>
+
+              <tr>
+                <% listeExpedition.forEach(element => {%>
+                  <tr>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.name %></td>
+                    <td>
+                      <a href="/updateComptes/<%=element._id%>" class="non"
+                        ><i class="fa-solid fa-pen-to-square"></i></a
+                      ><a href="" class="non"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    <% }); %>
+              </tr>
             </thead>
             <tbody>
               <tr>

@@ -2,48 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/accueil.css">
-    <link rel="stylesheet" href="dist/css/bootstrap.css">
-    <link rel="stylesheet" href="dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/accueil.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-        
-        <%- include('navbar/navbaraccueil') %>
-  
-        <div class="article1">
 
-            <div class="ecritureslid">
-                <h1>Bienvenue chez GMC-EXPRESS</h1>
-                <h2>Spécialisé dans l’agriculture , GMC-EXPRESS   :     vous<br> accompagne dans vos activités agricoles et vous<br> aide à gérer vos travailleurs!!</h2><br>
-            </div>   
-            
-            <div class="slideshow-container">
-                <div class="slideshow">
-                  <div class="slid"> <img src="images/canion.jpg" alt="" width="100%" height="80%"></div>
-                  <div class="slid"> <img src="images/femord.jpg" alt="" width="100%" height="80%"></div>
-                  <div class="slid"> <img src="images/pexels-ketut-subiyanto-4246124.jpg" alt="" width="100%" height="80%"></div>
-                  <div class="slid"> <img src="images/rougblanc.jpg" alt="" width="100%" height="80%"></div>
-                  <div class="slid"> <img src="images/homord.jpg" alt="" width="100%" height="80%"></div>
-                  <div class="slid"> <img src="images/pexels-tiger-lily-4481534.jpg" alt="" width="100%" height="80%"></div>
-                </div>
-              </div>
-              
-         </div>
+  <%- include('navbar/navbaraccueil') %>
 
-        <%- include('footer/footer')%>
-   
-        <script src="../slid.js"></script>
+    <div class="article1">
+
+      <div class="ecritureslid">
+        <h1>Bienvenue chez GMC-EXPRESS</h1>
+        <h2>Spécialisé dans le transport , <span>GMC-EXPRESS</span> vous<br> accompagne dans la suivie de vos
+          expéditions</h2><br>
+      </div>
+
+      <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
+        style="display: block;">Previous</button>
+
+      <div class="aa">
+        <img src="../images/canion.jpg" alt="" width="50%">
+        <img src="../images/femord.jpg" alt="" width="50%">
+        <img src="../images/canion.jpg" alt="" width="50%">
+        <img src="../images/femord.jpg" alt="" width="50%">
+        <img src="../images/canion.jpg" alt="" width="50%">
+        <img src="../images/femord.jpg" alt="" width="50%">
+        <img src="../images/canion.jpg" alt="" width="50%">
+        <img src="../images/femord.jpg" alt="" width="50%">
+      </div>
+      <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
+        style="display: block;">Next</button>
+
+
+    </div>
+
+    <%- include('footer/footer')%>
+
+      <script src="../slid.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        $('.aa').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      </script>
 
 </body>
 

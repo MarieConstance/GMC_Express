@@ -1,5 +1,7 @@
 const User = require("../model/user")
 
+const listeExpedition = require("../model/listeExpedition")
+
 exports.createUser = (req, res) => {
     console.log(req);
 const user = new User(req.body)
@@ -23,3 +25,9 @@ exports.inscription = async (req, res)=> {
         
     }
 }
+
+exports.formulaireExp = async (req, res) => {
+    const tableauExpe = await listeExpedition.find({});
+  
+    res.render("listeExpedition", {tableauExpe });
+  };

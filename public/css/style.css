@@ -49,14 +49,12 @@ body{
  width: 12rem;
  height: 4rem;
  border: 1px solid #FF6E40;
- color: white;
  border-radius: 2rem;
  background-color: #303f49b2;
  margin-top: 2rem;
  padding: 1.1em 2em;
- 
  font-size: 15px;
- color: #131313;
+ color: #FF6E40;
  cursor: pointer;
  position: relative;
  overflow: hidden;
