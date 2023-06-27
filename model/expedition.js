@@ -23,6 +23,12 @@ const expeditionSchema = mongoose.Schema(
             type: String,
             required: true,
         },
+        
+        adresseExpediteur: {
+            type: String,
+            required: true,
+        },
+       
        dateExpedition: {
             type: Date,
             required: true,
@@ -34,6 +40,11 @@ const expeditionSchema = mongoose.Schema(
         description: {
             type: String,
             required: false,
+        },
+        statut: {
+            type: String,
+            required: false,
+            default: "En cours"
         }
           
     },

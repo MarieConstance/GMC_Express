@@ -33,9 +33,9 @@ const Expedition = require("../model/expedition");
     static recup(req, res){
         try{
             Expedition.find({})
-            .then(response =>{
-                console.log(response);
-                res.render("listeExpedition", response);
+            .then(listeExpedition =>{
+                console.log(listeExpedition);
+                res.render("listeExpedition", {listeExpedition});
             })
             .catch(error => {
                 console.log(error);

@@ -35,104 +35,7 @@
 
           <!----------------->
 
-        <!-- <table class="table align-middle mb-0 bg-white">
-            <thead class="bg-light">
-              <tr>
-                
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <div class="ms-3">
-                      <p class="fw-bold mb-1">John Doe</p>
-                      
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <p class="fw-normal mb-1">Software engineer</p>
-                 
-                </td>
-                <td>
-                  <span class="badge badge-success rounded-pill d-inline">Active</span>
-                </td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>
-                  <button type="button" class="btn btn-link btn-sm btn-rounded">
-                    Consulter
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="d-flex align-items-center">
-                    
-                    <div class="ms-3">
-                      <p class="fw-bold mb-1">Alex Ray</p>
-                     
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <p class="fw-normal mb-1">Consultant</p>
-                 
-                </td>
-                <td>
-                  <span class="badge badge-primary rounded-pill d-inline"
-                        >Onboarding</span
-                    >
-                </td>
-                <td>Junior</td>
-                <td>Junior</td>
-                <td>Junior</td>
-                <td>
-                  <button
-                          type="button"
-                          class="btn btn-link btn-rounded btn-sm fw-bold"
-                          data-mdb-ripple-color="dark"
-                          >
-                          Consulter
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="d-flex align-items-center">
-                    
-                    <div class="ms-3">
-                      <p class="fw-bold mb-1">Kate Hunington</p>
-                      
-                    </div>
-                  </div>
-                </td>
-                
-                <td>
-                  <p class="fw-normal mb-1">Designer</p>
-                 
-                </td>
-                <td>
-                  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                </td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>
-                  <button
-                          type="button"
-                          class="btn btn-link btn-rounded btn-sm fw-bold"
-                          data-mdb-ripple-color="dark"
-                          >
-                          Consulter
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-
+        
           <table class="table align-middle mb-0 bg-white">
             <thead class="bg-light">
               <tr>
@@ -148,13 +51,19 @@
               <tr>
                 <% listeExpedition.forEach(element => {%>
                   <tr>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
-                    <td><%= element.name %></td>
+                    <td><%= element.reference %></td>
+                    <td><%= element.expediteur %></td>
+                    <td><%= element.adressLivraison %></td>
+                    <td><%= element.adresseExpediteur %></td>
+                    <td><%= element.dateExpedition %></td>
+                    <td><%= element.destinataire %></td>
+                    <td><%= element.statut %></td>
+                    <td>
+                      <button type="button"class="btn btn-link btn-rounded btn-sm fw-bold"data-mdb-ripple-color="dark">
+                        <a href=""></a>  Consulter</button>  
+                       </button>
+                     </td>
+
                     <td>
                       <a href="/updateComptes/<%=element._id%>" class="non"
                         ><i class="fa-solid fa-pen-to-square"></i></a
@@ -163,62 +72,7 @@
                     <% }); %>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="d-flex align-items-center">
-                    
-                    <div class="ms-3">
-                      <p class="fw-bold mb-1">John Doe</p>
-                     
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <p class="fw-normal mb-1">Software engineer</p>
-                  
-                </td>
-                
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>
-                  <button type="button" class="btn btn-link btn-sm btn-rounded">
-                    Consulter
-                  </button>
-                </td>
-                
-              </tr>
-              <tr>
-                <td>
-                  <div class="d-flex align-items-center">
-                    
-                    <div class="ms-3">
-                      <p class="fw-bold mb-1">Kate Hunington</p>
-                    
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <p class="fw-normal mb-1">Designer</p>
-                 
-                </td>
-                <td>sd</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>Senior</td>
-                <td>
-                  <button
-                          type="button"
-                          class="btn btn-link btn-rounded btn-sm fw-bold"
-                          data-mdb-ripple-color="dark"
-                          >
-                    Consulter
-                  </button>
-                </td>
-              </tr>
-            </tbody>
+            
           </table>
        
 
