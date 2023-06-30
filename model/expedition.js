@@ -51,7 +51,7 @@ const expeditionSchema = mongoose.Schema(
     {
         timestamps: true
     }
-)
+);
 
 const Expedition = mongoose.model("expedition", expeditionSchema); 
 module.exports = Expedition;

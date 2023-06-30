@@ -8,6 +8,7 @@ Router.post("/saveUser", ControllerUser.saveUser);
 Router.post("/login", ControllerUser.login);
 Router.post("/expedition", ControllerExpedition.save);
 Router.get("/listeExpedition", ControllerExpedition.recup);
+Router.get("/consultation", ControllerExpedition.recupTout);
 
 Router.post('/inde',userCtrl.createUser)
 
@@ -39,9 +40,5 @@ Router.get("/accueil", (req, res) => {
 Router.get("/formulaireExp", (req, res) => {
   res.render("formulaireExp");
 });
-
-
-    
-
 
 module.exports = Router;

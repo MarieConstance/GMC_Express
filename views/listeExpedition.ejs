@@ -40,7 +40,10 @@
             <thead class="bg-light">
               <tr>
                 <th>Numero de suivi</th>
+                <th>Reference de l'expéditeur</th>
                 <th>Nom de l'expéditeur</th>
+                <th>Numero du destinataire</th>
+                <th>Nom du destinataire</th>
                 <th>Adresse de Livraison</th>
                 <th>Adresse de l'expéditeur</th>
                 <th>Date de livraison</th>
@@ -51,12 +54,14 @@
               <tr>
                 <% listeExpedition.forEach(element => {%>
                   <tr>
-                    <td><%= element.reference %></td>
+                    <td><%= element.reference %></td> 
                     <td><%= element.expediteur %></td>
+                    <td><%= element.destinataire %></td>
                     <td><%= element.adressLivraison %></td>
                     <td><%= element.adresseExpediteur %></td>
-                    <td><%= element.dateExpedition %></td>
+                    <td><%= new Date(element.dateExpedition).toLocaleString('fr-FR', { timeZone: 'UTC' }) %></td>
                     <td><%= element.destinataire %></td>
+                    <td><%= element.statut %></td>
                     <td><%= element.statut %></td>
                     <td>
                       <button type="button"class="btn btn-link btn-rounded btn-sm fw-bold"data-mdb-ripple-color="dark">

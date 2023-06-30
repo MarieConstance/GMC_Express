@@ -20,12 +20,12 @@ const Expedition = require("../model/expedition");
                 .catch(error => {
                     const messag = "une erreur s'est produite lors du traitement de la requette";
                     console.log(messag, error);
-                    res.render("formulaireExp", {messag})
+                    res.render("formulaireExp", {messag});
                 })
             })
             
         }catch(error){
-            console.log("requette erronnée")
+            console.log("requette erronnée");
         }
     }
 
@@ -45,6 +45,24 @@ const Expedition = require("../model/expedition");
         }
         
     }
+
+    static recupTout(req, res){
+        try{
+            Expedition.find({})
+            .then(consult =>{
+                console.log(22222222222222222);
+                console.log(consult);
+                res.render("consultation", {consult});
+            })
+            .catch(error => {
+                console.log(error);
+            })
+        }catch(error){
+            
+        }
+        
+    }
+    
 
  }
 

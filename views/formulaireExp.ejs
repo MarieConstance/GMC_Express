@@ -22,10 +22,19 @@
         <h2 class="title"> .Formulaire d'expédition</h2>
 
         <form class="form" action="http://localhost:3000/expedition" method="POST">
+
+            <label disabled>
+                <input required="" type="text"  class="input" name="reference">
+                <span>Reference de l'expéditeur</span>
+            </label>
     
             <label>
+                <input required="" placeholder="" type="text" class="input" name="expediteur">
+                <span>Nom de l'expéditeur</span>
+            </label> 
+            <label>
                 <input required="" placeholder="" type="text" class="input" name="numero">
-                <span>Numéro du phone de l'expediteur</span>
+                <span>Numéro du phone du destinataire</span>
             </label>
             <label>
                 <input required="" placeholder="" type="text" class="input" name="destinataire">
@@ -38,12 +47,8 @@
             </label> 
                 
             <label>
-                <input required="" type="text" placeholder="" class="input" name="expediteur">
+                <input required="" type="text" placeholder="" class="input" name="adresseExpediteur">
                 <span>Adresse de l'expéditeur</span>
-            </label>
-            <label disabled>
-                <input required="" type="text"  class="input" name="reference">
-                <span>Reference de l'expéditeur</span>
             </label>
 
             <div class="flex">
@@ -60,10 +65,12 @@
             </label>
             
             <button class="fancy" href="#">
-              <span class="top-key"></span>
-              <span class="text">ENVOYER</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
+              <a href="./connexion.ejs">
+                <span class="top-key"></span>
+                <span class="text">ENVOYER</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a>
             </button>
         </form>
 

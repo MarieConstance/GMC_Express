@@ -20,10 +20,22 @@ body{
     margin-left: 20rem;
     
   }
+
+  .logcon{
+    margin-left: 8rem;
+    
+  }
+
+  .form img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+   
+  }
   
   .title {
     color:  #FF6E40;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 30px;
     text-align: center;
@@ -131,3 +143,19 @@ body{
     background-color: white;
     color: #15172b;
   }
+
+.liensdirection{
+
+  margin-top: 4rem;
+  margin-left: 5rem;
+  color: white;
+
+  }
+
+  .liensdirection p{
+    text-decoration: none;
+    color: #FF6E40;
+    margin-left: 10px;
+    
+    }
+  

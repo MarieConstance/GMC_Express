@@ -13,19 +13,30 @@ body{
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 600px;
+    height: 700px;
     padding: 20px;
     width: 400px;
     margin-top: 10rem;
     margin-left: 70rem;
     
   }
+  .logcon{
+    margin-left: 8rem;
+    
+  }
+
+  .form img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+   
+  }
   
   .title {
     color:  #FF6E40;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
   }
   
@@ -131,3 +142,10 @@ body{
     background-color: white;
     color: #15172b;
   }
+
+  .liensdirection a{
+  
+    text-decoration: none;
+    color: white;
+     
+    }
